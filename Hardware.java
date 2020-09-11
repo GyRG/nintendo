@@ -1,14 +1,17 @@
 import java.util.ArrayList;
+
 public class Hardware extends Producto {
+
     private String modelo;
     private Double peso;
+
     private ArrayList<Caracteristica> caracteristicas = new ArrayList<>();
 
     public Hardware(){}
 
-    public Hardware(String idProducto, String nombre, String especificaciones, Double precio, String modelo, Double peso)
+    public Hardware(int idProducto, String nombre, String especificaciones, Double precio, Fecha fechaSalida, String modelo, Double peso)
     {
-        super(idProducto, nombre, especificaciones, precio);
+        super(idProducto, nombre, especificaciones, precio, fechaSalida);
         this.modelo = modelo;
         this.peso = peso;
     }

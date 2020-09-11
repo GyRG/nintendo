@@ -12,19 +12,19 @@ public class Producto {
     private int idProducto;
     private String nombre;
     private String especificaciones;
-    private double precio;
-    public Fecha fechaSalida;
+    private Double precio;
+    private Fecha fechaSalida;
     
     public Producto (){
         
     }
 
-    public Producto(int idProducto, String nombre, String especificaciones, double precio) {
+    public Producto(int idProducto, String nombre, String especificaciones, Double precio, Fecha fechaSalida) {
         this.idProducto = idProducto;
         this.nombre = nombre;
         this.especificaciones = especificaciones;
         this.precio = precio;
-        //this.fechaSalida = fechaSalida;
+        this.fechaSalida = fechaSalida;
     }
 
     public int getIdProducto() {
@@ -51,7 +51,7 @@ public class Producto {
         this.especificaciones = especificaciones;
     }
 
-    public double getPrecio() {
+    public Double getPrecio() {
         return precio;
     }
 
@@ -59,17 +59,22 @@ public class Producto {
         this.precio = precio;
     }
 
-    public Fecha getFecha() {
+    public Fecha getFechaSalida() {
         return fechaSalida;
     }
 
-    public void setFecha(Fecha fechaSalida) {
+    public void setFechaSalida(Fecha fechaSalida) {
         this.fechaSalida = fechaSalida;
     }
 
     @Override
     public String toString() {
-        return "Producto{" + "idProducto=" + idProducto + ", nombre=" + nombre + ", especificaciones=" + especificaciones + ", precio=" + precio + ", fechaSalida=" + fechaSalida + '}';
+        return "Producto: \n" +
+                    "\t idProducto: " +idProducto+
+                    "\n \t nombre: " +nombre+
+                    "\n \t especificaciones: " +especificaciones+
+                    "\n \t precio: " +precio+
+                    fechaSalida;
     }
 
     

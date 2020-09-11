@@ -9,7 +9,7 @@
  * @author felip
  */
 public class Fecha {
-     private int dia;
+    private int dia;
     private int mes;
     private int agno;
 
@@ -45,7 +45,9 @@ public class Fecha {
 
     @Override
     public String toString() {
-        return "\n Fecha: " + " \n Dia: " + dia + "\n Mes: " + mes + "\n agno: " + agno;
+        return "\n \t Fecha de salida: " + 
+        "( Dia: " + dia + 
+        " / Mes: " + mes +"/ Agno: " + agno+" )";
     }
     
     
