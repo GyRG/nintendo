@@ -39,7 +39,7 @@ public class Juego extends Producto{
             for(Sinopsis e: sinopsis){salida += e.toString();}
             for(Categoria e: categoria){salida += e.toString();}   
         
-            return super.toString()+
+            return "Juego\n"+super.toString()+
                     "\n \t Subtitulo: "+subTitulo+
                     "\n \t "+salida;
         }

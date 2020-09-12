@@ -69,12 +69,12 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "Producto: \n" +
+        return " " +
                     "\t idProducto: " +idProducto+
                     "\n \t nombre: " +nombre+
                     "\n \t especificaciones: " +especificaciones+
                     "\n \t precio: " +precio+
-                    fechaSalida;
+                    "\n \t "+fechaSalida;
     }
 
     

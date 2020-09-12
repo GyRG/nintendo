@@ -27,11 +27,11 @@ public class Hardware extends Producto {
     public void addCaracteristica(Caracteristica ca){
         caracteristicas.add(ca);
     }
-
+    @Override
     public String toString(){
-        String salida = "";
+        String salida = " ";
             for(Caracteristica e: caracteristicas){ salida += e.toString();}
-        return salida;
+        return super.toString() + salida;
     }
 
 

@@ -1,11 +1,10 @@
-package nintendo;
-
 
 /**
  *
  * @author luism
  */
 public class Accesorio extends Hardware {
+
     private String alimentacion;
     private String conexion;
     
@@ -21,7 +20,7 @@ public class Accesorio extends Hardware {
         return alimentacion;
     }
     
-    public void setAlimentacion(){
+    public void setAlimentacion(String alimentacion){
         this.alimentacion = alimentacion;
     }
     
@@ -29,18 +28,20 @@ public class Accesorio extends Hardware {
         return conexion;
     }
     
-    public void setConexion(){
+    public void setConexion(String conexion){
         this.conexion = conexion;
     }
     
     @Override
     public String toString(){
-        return "Accesorio{" + "alimentacion=" + alimentacion + ", conexion=" + conexion;
+        return "Accesorio:" + 
+                "\n \t \t alimentacion: "+alimentacion+
+                "\n\tconexion=" + conexion;
     }
     
     
     
-   
+
     
 }//fin class
 
