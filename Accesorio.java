@@ -34,9 +34,9 @@ public class Accesorio extends Hardware {
     
     @Override
     public String toString(){
-        return "Accesorio:" + 
-                "\n \t \t alimentacion: "+alimentacion+
-                "\n\tconexion=" + conexion;
+        return super.toString()+
+        "\n \t \t Fuente de alimentacion: "+alimentacion+
+                "\n \t \t Tipo de conexion: " + conexion;
     }
     
     
