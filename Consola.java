@@ -35,6 +35,6 @@ public class Consola extends Hardware {
     public String toString(){
         String salida =" \n \t";
             for(Accesorio a: accesorios){ salida += a.toString();}
-        return "Consola\n"+super.toString()+"\n \t Incluye: \t \t"+salida;
+        return "Consola\n"+super.toString()+"\n \n \tIncluye: \t \t"+salida;
     }
 }//fin class
