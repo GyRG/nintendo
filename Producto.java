@@ -43,11 +43,11 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public String getespecificaciones() {
+    public String getEspecificaciones() {
         return especificaciones;
     }
 
-    public void setespecificaciones(String especificaciones) {
+    public void setEpecificaciones(String especificaciones) {
         this.especificaciones = especificaciones;
     }
 
