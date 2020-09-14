@@ -31,7 +31,7 @@ public class Hardware extends Producto {
     public String toString(){
         String salida = " ";
             for(Caracteristica e: caracteristicas){ salida += e.toString();}
-        return super.toString() + salida;
+        return super.toString() + "\n \t Modelo: "+modelo+"\n Peso: "+peso+ salida;
     }
 
 
